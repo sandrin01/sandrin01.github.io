@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Table - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Beautiful-Time-Picker.css">
+    <link rel="stylesheet" href="assets/css/Boostrap-Tabs.css">
+    <link rel="stylesheet" href="assets/css/Bootstrap-4---Tabs-with-Arrows.css">
+    <link rel="stylesheet" href="assets/css/Clock-Real-Time-1.css">
+    <link rel="stylesheet" href="assets/css/Clock-Real-Time.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/css/theme.bootstrap_4.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Ludens---1-Index-Table-with-Search--Sort-Filters-v20.css">
+    <link rel="stylesheet" href="assets/css/Minimal-tabs-1.css">
+    <link rel="stylesheet" href="assets/css/Minimal-tabs.css">
+    <link rel="stylesheet" href="assets/css/MUSA_no-more-tables-1.css">
+    <link rel="stylesheet" href="assets/css/MUSA_no-more-tables.css">
+    <link rel="stylesheet" href="assets/css/MUSA_panel-table-1.css">
+    <link rel="stylesheet" href="assets/css/MUSA_panel-table.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
+    <link rel="stylesheet" href="assets/css/opening-times-time-picker.css">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+    <link rel="stylesheet" href="assets/css/tabs-Menu.css">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#"><img src="assets/img/logo.png" style="width: 190px;">
+                    <div class="sidebar-brand-icon rotate-n-15"></div>
+                    <div class="sidebar-brand-text mx-3"></div>
+                </a>
+                <hr class="sidebar-divider my-0">
+                <ul class="navbar-nav text-light" href="#" id="accordionSidebar">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a class="nav-link" href="ptable.html"><i class="fa fa-check-circle"></i>Permanent Access Request</a><a class="nav-link" href="temptable.html"><i class="fa fa-exclamation-circle"></i>Temporary Access Request</a><a class="nav-link" href="gtable.html"><i class="fa fa-user-plus"></i>Guest Access Request</a><a class="nav-link" href="app.html"><i class="fas fa-table"></i>Approvals</a><a class="nav-link" href="clients.html"><i class="fa fa-user"></i>Admin Requests</a><a class="nav-link" href="profile.html"><i class="fa fa-user"></i>Company Profile </a><a class="nav-link" href="sec.html"><i class="fa fa-user"></i>Security Approvals </a></li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"></li>
+                </ul>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+            </div>
+        </nav>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button><span class="d-none d-lg-inline me-2 text-gray-600 small" style="margin: 0px 7px 0px 650px;">smith@orionstellar.com</span></div>
+                </nav>
+                <div class="container-fluid">
+                    <h3 class="text-dark mb-4">Company Profile&nbsp;</h3>
+                    <div class="card shadow">
+                        <div class="card-header py-3">
+                            <p class="text-primary m-0 fw-bold">Company Profile Information</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="card" id="TableSorterCard">
+                        <div class="card-header py-3"><a href="company.html"><button class="btn btn-primary" type="button">Create company profile</button></a></div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table tablesorter" id="ipi-table">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th class="text-center">Company name</th>
+                                                <th class="text-center">BR number</th>
+                                                <th class="text-center">Company address</th>
+                                                <th class="text-center">name of Cio/cto/head-it</th>
+                                                <th class="text-center">Technical number</th>
+                                                <th class="text-center">Portal admin</th>
+                                                <th class="text-center">e-mail</th>
+                                                <th class="text-center">Billing number</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-center">
+                                            <tr>
+                                                <td>ABC</td>
+                                                <td>1254896</td>
+                                                <td>123 Colombo</td>
+                                                <td>Jhon Walt</td>
+                                                <td>0771234567</td>
+                                                <td>Mary</td>
+                                                <td>john@abc.com</td>
+                                                <td>#1452</td>
+                                            </tr>
+                                            <tr>
+                                                <td>XYZ</td>
+                                                <td>7852145</td>
+                                                <td>789 Colombo</td>
+                                                <td>Amy Doe</td>
+                                                <td>0714568752</td>
+                                                <td>Sue</td>
+                                                <td>amy@xyz.com</td>
+                                                <td>#4785</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="bg-white sticky-footer">
+                    <div class="container my-auto">
+                        <div class="text-center my-auto copyright"><span>Copyright © OrionStellar 2022</span></div>
+                    </div>
+                </footer>
+            </div>
+        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/Bootstrap-DateTime-Picker-1.js"></script>
+    <script src="assets/js/Bootstrap-DateTime-Picker-2.js"></script>
+    <script src="assets/js/Bootstrap-DateTime-Picker.js"></script>
+    <script src="assets/js/Clock-Real-Time.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/widgets/widget-filter.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/widgets/widget-storage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="assets/js/Ludens---1-Index-Table-with-Search--Sort-Filters-v20-1.js"></script>
+    <script src="assets/js/Ludens---1-Index-Table-with-Search--Sort-Filters-v20.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>

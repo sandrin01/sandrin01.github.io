@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>OSDC ACS</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Beautiful-Time-Picker.css">
+    <link rel="stylesheet" href="assets/css/Boostrap-Tabs.css">
+    <link rel="stylesheet" href="assets/css/Bootstrap-4---Tabs-with-Arrows.css">
+    <link rel="stylesheet" href="assets/css/Clock-Real-Time-1.css">
+    <link rel="stylesheet" href="assets/css/Clock-Real-Time.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/css/theme.bootstrap_4.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Ludens---1-Index-Table-with-Search--Sort-Filters-v20.css">
+    <link rel="stylesheet" href="assets/css/Minimal-tabs-1.css">
+    <link rel="stylesheet" href="assets/css/Minimal-tabs.css">
+    <link rel="stylesheet" href="assets/css/MUSA_no-more-tables-1.css">
+    <link rel="stylesheet" href="assets/css/MUSA_no-more-tables.css">
+    <link rel="stylesheet" href="assets/css/MUSA_panel-table-1.css">
+    <link rel="stylesheet" href="assets/css/MUSA_panel-table.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="assets/css/Navigation-with-Search.css">
+    <link rel="stylesheet" href="assets/css/opening-times-time-picker.css">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+    <link rel="stylesheet" href="assets/css/tabs-Menu.css">
+</head>
+
+<body>
+    <div class="row"></div>
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center">Manage Records</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3">
+                        <p>Request type</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>ID</p>
+                    </div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3">
+                        <div class="form-group mb-3">
+                            <div class="col-sm-10"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="dropdown"><button class="btn btn-primary dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button">Select request type&nbsp;</button>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#">Permanent access</a><a class="dropdown-item" href="#">Temporary access</a><a class="dropdown-item" href="#">Guest access</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-3"><input type="search" placeholder="Search by ID">
+                        <nav class="navbar navbar-light navbar-expand-md navigation-clean-search">
+                            <div class="container"><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                                <div class="collapse navbar-collapse" id="navcol-1">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item"></li>
+                                        <li class="nav-item"></li>
+                                        <li class="nav-item"></li>
+                                    </ul>
+                                    <form class="me-auto search-form" target="_self">
+                                        <div class="d-flex align-items-center"><label class="form-label d-flex mb-0" for="search-field"></label></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="card" id="TableSorterCard"><div class="row"></div>
+<div class="col">
+    <div>
+        <div class="card">
+            <div class="card-body">
+                <h5>Company</h5>
+                <div class="container">
+                    <div class="row">
+                        <div id="no-more-tables">
+                            <table class="col-md-12 table-bordered table-striped table-condensed cf">
+                                <thead class="cf">
+                                    <tr>
+                                        <th>Reference ID</th>
+                                        <th>Company</th>
+                                        <th class="text">Name of the requester</th>
+                                        <th class="text">Company address</th>
+                                        <th class="text">Name of company CIO/CTO/Head-IT</th>
+                                        <th class="numeric">Contact number</th>
+                                        <th class="text">E-mail</th>
+                                        <th class="text">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-title="id">NNC_001</td>
+                                        <td data-title="Company">XYZ COMPANY LIMITED.</td>
+                                        <td data-title="namereq" class="text">John Doe</td>
+                                        <td data-title="comaddress" class="text">123 Colombo 09</td>
+                                        <td data-title="cio" class="text">Smith Doe</td>
+                                        <td data-title="number" class="numeric">077 1234567</td>
+                                        <td data-title="email" class="text">john@xyz.com</td>
+                                         <td>
+                                <div class="dropdown">
+                                    <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle" id="dropdownBtn" data-bs-toggle="dropdown" aria-expanded="false">Action</button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownBtn">
+                                        <li><a href="company.html?action=edit&branchId=%3C%3Fphp%20echo%20%24row%5B'branchId']; ?>" class="dropdown-item"><i class="fas fa-edit"></i>&nbsp;Edit</a></li>
+                                        <li><a href="company.html?action=edit&branchId=%3C%3Fphp%20echo%20%24row%5B'branchId']; ?>" class="dropdown-item"><i class="fas fa-edit"></i>&nbsp;Delete</a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-responsive-md text-center">
+                    <table class="table table-borderless">
+                        <tbody>
+                            <tr></tr>
+                            <tr></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div></div>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/Bootstrap-DateTime-Picker-1.js"></script>
+    <script src="assets/js/Bootstrap-DateTime-Picker-2.js"></script>
+    <script src="assets/js/Bootstrap-DateTime-Picker.js"></script>
+    <script src="assets/js/Clock-Real-Time.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/widgets/widget-filter.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/widgets/widget-storage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="assets/js/Ludens---1-Index-Table-with-Search--Sort-Filters-v20-1.js"></script>
+    <script src="assets/js/Ludens---1-Index-Table-with-Search--Sort-Filters-v20.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
